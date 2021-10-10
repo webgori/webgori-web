@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" class="fill-height">
+  <v-row justify="center" align="center" class="fill-height">
     <v-col cols="12" class="px-10">
       <v-card elevation="2">
         <v-card-title>자기소개</v-card-title>

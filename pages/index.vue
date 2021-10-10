@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center" class="fill-height">
-    <v-col cols="12" sm="8" md="6" class="text-center">
+    <v-col cols="12" class="text-center">
       <v-img
         src="/logo.png"
         width="256"
