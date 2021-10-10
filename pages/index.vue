@@ -1,7 +1,18 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
+  <v-row justify="center" align="center" class="fill-height">
+    <v-col cols="12" sm="8" md="6" class="text-center">
+      <v-img
+        src="/logo.png"
+        width="256"
+        height="256"
+        class="mx-auto mb-5"
+      />
+
+      <h1 class="mb-5">박용순의 개인 웹 사이트</h1>
+
+      <p class="mx-auto">어서오세요! 이곳은 박용순의 개인 웹 사이트 입니다.</p>
+
+<!--      <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
       </v-card>
@@ -71,7 +82,7 @@
             Continue
           </v-btn>
         </v-card-actions>
-      </v-card>
+      </v-card>-->
     </v-col>
   </v-row>
 </template>
