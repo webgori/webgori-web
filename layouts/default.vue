@@ -40,8 +40,8 @@
 export default {
   data () {
     return {
-      clipped: false,
-      drawer: true,
+      mobile: false,
+      drawer: false,
       fixed: false,
       items: [
         {
@@ -79,6 +79,18 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js'
+    }
+  },
+  mounted() {
+    this.setMobile();
+    this.setDrawer();
+  },
+  methods: {
+    setMobile() {
+      this.mobile = window.innerWidth < 600;
+    },
+    setDrawer() {
+      this.drawer = !this.mobile;
     }
   }
 }
