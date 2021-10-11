@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" class="fill-height">
-    <v-col cols="12" class="ml-10 mt-3">
+    <v-col cols="12" class="pl-6 pt-3">
       <v-row class="mt-0">
         <v-col cols="12">
           <span class="text-h5">인적사항</span>
@@ -195,35 +195,35 @@
         languages: [
           {
             name: 'JAVA',
-            value: 10
+            value: 1
           },
           {
             name: 'PHP',
-            value: 10
+            value: 2
           },
           {
             name: 'Javascript',
-            value: 10
+            value: 3
           },
           {
             name: 'Typescript',
-            value: 10
+            value: 4
           },
           {
             name: 'C#',
-            value: 10
+            value: 5
           },
           {
             name: 'Python',
-            value: 10
+            value: 6
           },
           {
             name: 'Bash',
-            value: 10
+            value: 7
           },
           {
             name: 'SQL',
-            value: 10
+            value: 8
           }
         ],
         frameworks: [

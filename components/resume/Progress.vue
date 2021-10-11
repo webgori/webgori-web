@@ -12,7 +12,7 @@
       <v-col cols="9" lg="11">
         <v-progress-linear
           :value="item.value"
-          :buffer-value="50" />
+          :buffer-value="10" />
       </v-col>
     </v-row>
   </div>
