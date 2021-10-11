@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" class="fill-height">
-    <v-col cols="12" class="ml-10 mt-3">
+    <v-col cols="12" class="pl-10 mt-3">
       <v-row class="mt-0">
         <v-col cols="12">
           <span class="text-h5">인적사항</span>
@@ -131,8 +131,8 @@
           <v-divider />
           <p class="mt-1"><span class="pr-10">2000-01-01</span><span>문남초등학교</span></p>
           <p class="mt-1"><span class="pr-10">2000-01-01</span><span>인천중학교</span></p>
-          <p class="mt-1"><span class="mr-10">2000-01-01</span><span>인천전자공업고등학교 (멀티미디어 전자과)</span></p>
-          <p class="mt-1"><span class="mr-10">2000-01-01</span><span>인하공업전문대학 (컴퓨터시스템과)</span></p>
+          <p class="mt-1"><span class="pr-10">2000-01-01</span><span>인천전자공업고등학교 (멀티미디어 전자과)</span></p>
+          <p class="mt-1"><span class="pr-10">2000-01-01</span><span>인하공업전문대학 (컴퓨터시스템과)</span></p>
         </v-col>
       </v-row>
 
@@ -260,8 +260,6 @@
       getAge() {
         const today = new Date();
         const birthDate = new Date(1990, 9, 29);
-        console.log(today.getFullYear());
-        console.log(birthDate.getFullYear());
         return today.getFullYear()
           - birthDate.getFullYear()
           + 1;
