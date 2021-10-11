@@ -7,7 +7,7 @@
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
-          v-show="item.hidden"
+          v-show="item.show"
           :key="i"
           :to="item.to"
           router
@@ -47,31 +47,31 @@
             icon: 'mdi-home',
             title: '홈',
             to: '/',
-            hidden: true
+            show: true
           },
           {
             icon: 'mdi-help',
             title: '누구?',
             to: '/about',
-            hidden: true
+            show: false
           },
           {
             icon: 'mdi-chart-bubble',
             title: '족보',
             to: '/family-tree',
-            hidden: false
+            show: false
           },
           {
             icon: 'mdi-file-document',
             title: '이력서',
             to: '/resume',
-            hidden: true
+            show: true
           },
           {
             icon: 'mdi-chart-bubble',
             title: '포트폴리오',
             to: '/portfolio',
-            hidden: false
+            show: false
           }
         ],
         miniVariant: false,
