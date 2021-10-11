@@ -37,61 +37,62 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      mobile: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-home',
-          title: '홈',
-          to: '/',
-          hidden: true
-        },
-        {
-          icon: 'mdi-help',
-          title: '누구?',
-          to: '/about',
-          hidden: true
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: '족보',
-          to: '/family-tree',
-          hidden: false
-        },
-        {
-          icon: 'mdi-file-document',
-          title: '이력서',
-          to: '/resume',
-          hidden: true
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: '포트폴리오',
-          to: '/portfolio',
-          hidden: false
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
-  },
-  mounted() {
-    this.setMobile();
-    this.setDrawer();
-  },
-  methods: {
-    setMobile() {
-      this.mobile = window.innerWidth < 600;
+  export default {
+    data () {
+      return {
+        drawer: false,
+        fixed: false,
+        items: [
+          {
+            icon: 'mdi-home',
+            title: '홈',
+            to: '/',
+            hidden: true
+          },
+          {
+            icon: 'mdi-help',
+            title: '누구?',
+            to: '/about',
+            hidden: true
+          },
+          {
+            icon: 'mdi-chart-bubble',
+            title: '족보',
+            to: '/family-tree',
+            hidden: false
+          },
+          {
+            icon: 'mdi-file-document',
+            title: '이력서',
+            to: '/resume',
+            hidden: true
+          },
+          {
+            icon: 'mdi-chart-bubble',
+            title: '포트폴리오',
+            to: '/portfolio',
+            hidden: false
+          }
+        ],
+        miniVariant: false,
+        right: true,
+        rightDrawer: false,
+        title: 'Vuetify.js'
+      }
     },
-    setDrawer() {
-      this.drawer = !this.mobile;
+    mounted() {
+      this.setMobile();
+      this.setDrawer();
+    },
+    methods: {
+      setMobile() {
+        this.$store.commit('setMobile', {
+          mobile: window.innerWidth < 600
+        });
+      },
+      setDrawer() {
+        this.drawer = !this.$store.state.mobile;
+      }
     }
   }
-}
 </script>

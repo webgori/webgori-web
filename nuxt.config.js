@@ -49,6 +49,9 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    breakpoint: {
+      mobileBreakpoint: 'xs' // This is equivalent to a value of 960
+    },
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
