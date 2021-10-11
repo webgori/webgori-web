@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" class="fill-height">
-    <v-col cols="12" class="pl-10 mt-3">
+    <v-col cols="12" class="pl-5">
       <v-row class="mt-0">
         <v-col cols="12">
           <span class="text-h5">인적사항</span>
