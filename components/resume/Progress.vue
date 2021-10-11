@@ -11,7 +11,7 @@
       <v-col cols="3" lg="1"><span class="text-subtitle-2">{{ item.name }}</span></v-col>
       <v-col cols="9" lg="11">
         <v-progress-linear
-          :value="$vuetify.breakpoint.mobile ? item.value * 2 : item.value"
+          :value="$vuetify.breakpoint.mobile ? item.value * 5 : item.value"
           :buffer-value="bufferValue" />
       </v-col>
     </v-row>
@@ -34,7 +34,7 @@
     },
     data() {
       return {
-        bufferValue: this.$vuetify.breakpoint.mobile ? 20 : 10
+        bufferValue: this.$vuetify.breakpoint.mobile ? 50 : 10
       }
     }
   }
