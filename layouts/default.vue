@@ -63,10 +63,10 @@ export default {
           hidden: false
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-file-document',
           title: '이력서',
           to: '/resume',
-          hidden: false
+          hidden: true
         },
         {
           icon: 'mdi-chart-bubble',
