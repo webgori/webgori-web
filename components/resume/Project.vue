@@ -6,17 +6,15 @@
       <div v-for="(project, index) in projects" :key="index">
         <p :class="[index === 0 ? 'mt-1' : 'mt-5', 'mb-0']">
           <span v-if="project.link === ''" class="text-subtitle-1 font-weight-bold">
-            {{ project.name }}
+            {{ project.name }} ({{ project.company }})
           </span>
           <span v-else>
-            <a v-if="project.link !== ''" :href="project.link" target="_blank">{{ project.name }}</a>
+            <a v-if="project.link !== ''" :href="project.link" target="_blank">{{ project.name }} ({{ project.company }})</a>
           </span>
-          <span class="pl-16 subtitle-2">{{ project.startDate }} — {{ project.endDate }}</span>
         </p>
 
-        <span v-for="company in project.companyList" :key="company">
-          {{ company }}
-          <br />
+        <span class="subtitle-2">
+          {{ project.startDate }} — {{ project.endDate }}
         </span>
 
         <p v-if="project.description !== ''" class="mb-1 mt-1 font-italic">
@@ -45,7 +43,7 @@
             startDate: '2014-01-01',
             endDate: '2015-10-23',
             link: '',
-            companyList: ['넷마블블루'],
+            company: '넷마블블루',
             description: '목표 동시접속자 50,000명. 최고 동시접속자 약 10,000명, 게임 서버 5대 사용',
             works: [
               "게임 서버를 메인 프로젝트 개발자에게 인수인계 받아 개발",
@@ -64,7 +62,7 @@
             startDate: '2014-03-01',
             endDate: '2017-08-31',
             link: '',
-            companyList: ['넷마블블루', '넷마블앤파크'],
+            company: '넷마블블루, 넷마블앤파크',
             description: '국내 및 대만 서비스. 목표 동시접속자 50,000명. 최고 동시접속자 약 35,000명, 게임 서버 5대 사용',
             works: [
               "게임 서버를 메인 프로젝트 개발자에게 인수인계 받아 개발",
