@@ -36,7 +36,12 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/moment',
   ],
+
+  moment: {
+    locales: ['ko']
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -71,5 +76,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
 }
