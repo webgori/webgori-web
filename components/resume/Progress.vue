@@ -2,7 +2,7 @@
   <div>
     <v-row class="mt-0">
       <v-col cols="12">
-        <span class="text-h5">{{ title }}</span>
+        <span class="text-h5 secondary--text">{{ title }}</span>
         <v-divider />
       </v-col>
     </v-row>

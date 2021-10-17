@@ -69,6 +69,15 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
+        },
+        light: {
+          primary: colors.teal.accent3,
+          secondary: colors.brown.lighten1,
+          accent: '#ffca7b',
+          error: '#aeb7f9',
+          warning: '#f9aeae',
+          info: colors.teal.base,
+          success: colors.cyan.base
         }
       }
     }

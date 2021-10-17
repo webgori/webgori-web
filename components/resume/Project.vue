@@ -1,7 +1,7 @@
 <template>
   <v-row class="mt-0">
     <v-col cols="12">
-      <span class="text-h5">프로젝트</span>
+      <span class="text-h5 secondary--text">프로젝트</span>
       <v-divider />
       <div v-for="(project, index) in projects" :key="index">
         <p :class="[index === 0 ? 'mt-1' : 'mt-5', 'mb-0']">

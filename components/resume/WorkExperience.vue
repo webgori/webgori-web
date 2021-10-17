@@ -1,7 +1,7 @@
 <template>
   <v-row class="mt-0">
     <v-col cols="12">
-      <span class="text-h5">경력</span>
+      <span class="text-h5 secondary--text">경력</span>
       <v-divider />
       <p v-for="(workExperience, index) in workExperienceList" :key="index" :class="[index === 0 ? 'mt-1' : '', 'mb-0']">
         <span class="pr-10">{{ workExperience.startDate }} — {{ workExperience.endDate }}</span>

@@ -1,7 +1,7 @@
 <template>
   <v-row class="mt-0">
     <v-col cols="12">
-      <span class="text-h5">학교</span>
+      <span class="text-h5 secondary--text">학교</span>
       <v-divider />
       <p v-for="(education, index) in educations" :key="index" :class="[index === 0 ? 'mt-1' : 'mt-5', 'mb-0']">
         <span class="pr-10">{{ education.startDate }} — {{ education.endDate }}</span>

@@ -1,7 +1,7 @@
 <template>
   <v-row class="mt-0">
     <v-col cols="12">
-      <span class="text-h5">인적사항</span>
+      <span class="text-h5 secondary--text">인적사항</span>
       <v-divider />
 
       <div v-if="$vuetify.breakpoint.mobile">

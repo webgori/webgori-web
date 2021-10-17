@@ -34,19 +34,19 @@
         languages: [
           {
             name: 'JAVA',
-            value: 1
+            value: 7
           },
           {
             name: 'PHP',
-            value: 2
+            value: 6
           },
           {
             name: 'Javascript',
-            value: 3
+            value: 6
           },
           {
             name: 'Typescript',
-            value: 4
+            value: 5
           },
           {
             name: 'C#',
@@ -54,7 +54,7 @@
           },
           {
             name: 'Python',
-            value: 6
+            value: 5
           },
           {
             name: 'Bash',
@@ -62,21 +62,21 @@
           },
           {
             name: 'SQL',
-            value: 8
+            value: 7
           }
         ],
         frameworks: [
           {
             name: 'Spring',
-            value: 10
+            value: 7
           },
           {
             name: 'Socket.IO',
-            value: 10
+            value: 6
           },
           {
             name: 'Vue.js',
-            value: 10
+            value: 5
           }
         ],
       }

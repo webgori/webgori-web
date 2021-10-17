@@ -1,7 +1,7 @@
 <template>
   <v-row class="mt-0">
     <v-col cols="12">
-      <span class="text-h5">관심있는 개발 스킬</span>
+      <span class="text-h5 secondary--text">관심있는 개발 스킬</span>
       <v-divider />
 
       <v-chip-group
