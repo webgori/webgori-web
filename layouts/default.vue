@@ -10,6 +10,8 @@
           v-show="item.show"
           :key="i"
           :to="item.to"
+          :href="item.href"
+          :target="item.target"
           router
           exact
         >
@@ -47,7 +49,8 @@
             icon: 'mdi-home',
             title: '홈',
             to: '/',
-            show: true
+            show: true,
+            target: '_self'
           },
           {
             icon: 'mdi-help',
@@ -64,8 +67,9 @@
           {
             icon: 'mdi-file-document',
             title: '이력서',
-            to: '/resume',
-            show: true
+            href: 'https://realdeveloper.pro/webgori',
+            show: true,
+            target: '_blank'
           },
           {
             icon: 'mdi-chart-bubble',
